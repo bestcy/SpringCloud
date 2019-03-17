@@ -4,8 +4,6 @@ eureka:
     service-url:
       defaultZone: http://localhost:8761/eureka/
 spring:
-  application:
-    name: order
   stream:
     bindings:
       myMessage-input:
