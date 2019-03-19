@@ -1,0 +1,24 @@
+spring:
+  stream:
+    bindings:
+      myMessage-input:
+        destination: myMessage
+        group: order
+      myMessage-output:
+        destination: myMessage
+        group: order
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: 123456
+    url: jdbc:mysql://47.105.186.75:3307/spring-cloud?useSSL=false&allowPublicKeyRetrieval=true&useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true
+  rabbitmq:
+    host: 47.105.186.75
+    port: 5672
+    username: guest
+    password: guest
+  redis:
+    host: 47.105.186.75
+    port: 6379
+env:
+  test4
