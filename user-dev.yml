@@ -1,12 +1,4 @@
 spring:
-  stream:
-    bindings:
-      myMessage-input:
-        destination: myMessage
-        group: order
-      myMessage-output:
-        destination: myMessage
-        group: order
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     username: root
